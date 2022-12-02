@@ -141,7 +141,7 @@ namespace WindowsFormsApplication1
             txtId_dossier.DataBindings.Clear();
             txtType_dossier.DataBindings.Clear();
             txtNom_dossier.DataBindings.Add("text",comboBox1.DataSource,"nom");
-            txtId_dossier.DataBindings.Add("text", comboBox1.DataSource, "id_movie"); ;
+            txtId_dossier.DataBindings.Add("text", comboBox1.DataSource, "id_movie");
             txtType_dossier.DataBindings.Add("text", comboBox1.DataSource, "type");
             cnx.Close();
         }
@@ -200,7 +200,7 @@ namespace WindowsFormsApplication1
             else if (value == 3)
             {
                 if (txtId_dossier.Text == "" || txtNom_dossier.Text == "" || txtType_dossier.Text == "")
-                { MessageBox.Show("motherfucker enter the inputs"); }
+                { MessageBox.Show(" enter the inputs"); }
                 else
                 {
                     cnx.Open();
